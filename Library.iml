@@ -2,7 +2,13 @@
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Webflow" removed="false">
+          <file>file://$MODULE_DIR$/web/WEB-INF/config/spring/webflow.xml</file>
+          <file>file://$MODULE_DIR$/web/WEB-INF/config/spring/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/web/WEB-INF/config/spring/applicationContext.xml</file>
+        </fileset>
+      </configuration>
     </facet>
     <facet type="web" name="Web">
       <configuration>
@@ -30,6 +36,19 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="org.thymeleaf:thymeleaf:Release1" level="project" />
+    <orderEntry type="library" name="PrimeFaces-6.1" level="project" />
+    <orderEntry type="library" name="org.thymeleaf:thymeleaf:Release2" level="project" />
+    <orderEntry type="library" name="org.thymeleaf.extras:thymeleaf-extras-springsecurity3:Release" level="project" />
+    <orderEntry type="library" name="org.thymeleaf:thymeleaf:Release3" level="project" />
+    <orderEntry type="library" name="org.thymeleaf.extras:thymeleaf-extras-springsecurity3:Release1" level="project" />
+    <orderEntry type="library" name="org.thymeleaf:thymeleaf-spring4:Release" level="project" />
+    <orderEntry type="library" name="org.thymeleaf:thymeleaf:Release4" level="project" />
+    <orderEntry type="library" name="org.thymeleaf.extras:thymeleaf-extras-springsecurity3:Release2" level="project" />
+    <orderEntry type="library" name="org.thymeleaf:thymeleaf-spring4:Release1" level="project" />
+    <orderEntry type="library" name="org.thymeleaf:thymeleaf:Release" level="project" />
+    <orderEntry type="library" name="org.thymeleaf:thymeleaf:Release5" level="project" />
+    <orderEntry type="library" name="org.thymeleaf.extras:thymeleaf-extras-springsecurity4:Release" level="project" />
     <orderEntry type="library" name="Maven: com.sun.faces:jsf-api:2.2.16" level="project" />
     <orderEntry type="library" name="Maven: com.sun.faces:jsf-impl:2.2.16" level="project" />
     <orderEntry type="library" name="Maven: org.primefaces:primefaces:6.1" level="project" />
@@ -60,13 +79,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:slf4j-log4j12:1.6.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:4.0.0" level="project" />
-    <orderEntry type="library" name="org.thymeleaf:thymeleaf:Release1" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.faces:jsf-impl:2.2.16" level="project" />
     <orderEntry type="library" name="PrimeFaces-6.1" level="project" />
-    <orderEntry type="library" name="org.thymeleaf:thymeleaf:Release2" level="project" />
-    <orderEntry type="library" name="org.thymeleaf.extras:thymeleaf-extras-springsecurity3:Release" level="project" />
-    <orderEntry type="library" name="org.thymeleaf:thymeleaf:Release3" level="project" />
-    <orderEntry type="library" name="org.thymeleaf.extras:thymeleaf-extras-springsecurity3:Release1" level="project" />
-    <orderEntry type="library" name="org.thymeleaf:thymeleaf-spring4:Release" level="project" />
   </component>
 </module>
