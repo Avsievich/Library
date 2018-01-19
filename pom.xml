@@ -15,7 +15,7 @@
         <springsecurity-version>3.2.6.RELEASE</springsecurity-version>
         <slf4j-version>1.6.1</slf4j-version>
         <mojarra-version>2.2.16</mojarra-version>
-        <primefaces-version>6.0</primefaces-version>
+        <primefaces-version>6.1</primefaces-version>
     </properties>
 
 
@@ -24,7 +24,7 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-framework-bom</artifactId>
-                <version> ${spring-framework-version}</version>
+                <version>${spring-framework-version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -48,6 +48,7 @@
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
             <version>${primefaces-version}</version>
+
         </dependency>
 
 
@@ -109,7 +110,7 @@
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <version>1.2.15</version>
+            <version>1.2.17</version>
             <exclusions>
                 <exclusion>
                     <groupId>javax.mail</groupId>
@@ -134,7 +135,7 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.0.1</version>
+            <version>4.0.0</version>
             <scope>provided</scope>
         </dependency>
 
