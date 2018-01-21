@@ -4,18 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.avv</groupId>
+    <groupId>ru.avv.spring</groupId>
     <artifactId>Library</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
     <properties>
-           <webflow-version>2.4.1.RELEASE</webflow-version>
-        <spring-framework-version>5.0.2.RELEASE</spring-framework-version>
+        <webflow-version>2.4.1.RELEASE</webflow-version>
+        <spring-framework-version>4.1.5.RELEASE</spring-framework-version>
         <springsecurity-version>3.2.6.RELEASE</springsecurity-version>
         <slf4j-version>1.6.1</slf4j-version>
-        <mojarra-version>2.2.16</mojarra-version>
-        <primefaces-version>6.1</primefaces-version>
+        <mojarra-version>2.2.10</mojarra-version>
+        <primefaces-version>5.0</primefaces-version>
     </properties>
 
 
@@ -48,7 +48,6 @@
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
             <version>${primefaces-version}</version>
-
         </dependency>
 
 
@@ -110,7 +109,7 @@
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
+            <version>1.2.15</version>
             <exclusions>
                 <exclusion>
                     <groupId>javax.mail</groupId>
@@ -135,12 +134,11 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.0</version>
+            <version>3.0.1</version>
             <scope>provided</scope>
         </dependency>
 
 
     </dependencies>
-
-
 </project>
+
