@@ -4,10 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.avv.spring</groupId>
-    <artifactId>Library</artifactId>
+    <groupId>ru.javabegin.training.springlibrary</groupId>
+    <artifactId>LibraryFlow</artifactId>
     <version>1.0-SNAPSHOT</version>
-
 
     <properties>
         <webflow-version>2.4.1.RELEASE</webflow-version>
@@ -140,5 +139,6 @@
 
 
     </dependencies>
-</project>
 
+
+</project>
