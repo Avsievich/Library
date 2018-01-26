@@ -1,17 +1,9 @@
 package ru.javabegin.trainin.springlibrary.entities;
 
 public class Vote {
-    private String username;
     private int idVote;
+    private String username;
     private int idBookVote;
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
     public int getIdVote() {
         return idVote;
@@ -19,6 +11,14 @@ public class Vote {
 
     public void setIdVote(int idVote) {
         this.idVote = idVote;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public int getIdBookVote() {
@@ -45,8 +45,8 @@ public class Vote {
 
     @Override
     public int hashCode() {
-        int result = username != null ? username.hashCode() : 0;
-        result = 31 * result + idVote;
+        int result = idVote;
+        result = 31 * result + (username != null ? username.hashCode() : 0);
         result = 31 * result + idBookVote;
         return result;
     }

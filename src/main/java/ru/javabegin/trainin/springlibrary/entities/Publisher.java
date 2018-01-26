@@ -1,16 +1,8 @@
 package ru.javabegin.trainin.springlibrary.entities;
 
 public class Publisher {
-    private String name;
     private int idPublisher;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    private String name;
 
     public int getIdPublisher() {
         return idPublisher;
@@ -18,6 +10,14 @@ public class Publisher {
 
     public void setIdPublisher(int idPublisher) {
         this.idPublisher = idPublisher;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
@@ -35,8 +35,8 @@ public class Publisher {
 
     @Override
     public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + idPublisher;
+        int result = idPublisher;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
 }

@@ -4,9 +4,9 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="ru.javabegin.trainin.springlibrary.entities.Author" table="author" schema="public" catalog="Library">
-        <id name="idAuthor" column="id_author"/>
-        <property name="fio" column="fio"/>
+    <class name="ru.javabegin.trainin.springlibrary.entities.Avtor" table="avtor" schema="public" catalog="Library">
+        <id name="idAvtor" column="id_avtor"/>
+        <property name="name" column="name"/>
         <property name="birthday" column="birthday"/>
     </class>
 </hibernate-mapping>

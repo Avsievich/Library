@@ -7,15 +7,16 @@
     <class name="ru.javabegin.trainin.springlibrary.entities.Book" table="book" schema="public" catalog="Library">
         <id name="idBook" column="id_book"/>
         <property name="name" column="name"/>
+        <property name="idAvtorBook" column="id_avtor_book"/>
         <property name="content" column="content"/>
         <property name="pageCount" column="page_count"/>
         <property name="isbn" column="isbn"/>
+        <property name="idGenreBook" column="id_genre_book"/>
         <property name="publishYear" column="publish_year"/>
+        <property name="idPublisherBook" column="id_publisher_book"/>
+        <property name="image" column="image"/>
         <property name="descr" column="descr"/>
         <property name="rating" column="rating"/>
         <property name="voteCount" column="vote_count"/>
-        <property name="authorIdBook" column="author_id_book"/>
-        <property name="genreIdBook" column="genre_id_book"/>
-        <property name="publisherIdBook" column="publisher_id_book"/>
     </class>
 </hibernate-mapping>

@@ -1,2 +1,4 @@
 .idea/
 out/
+target/classes/ru.javabegin.trainin.springlibrary.entities/Book.hbm.xml
+target/

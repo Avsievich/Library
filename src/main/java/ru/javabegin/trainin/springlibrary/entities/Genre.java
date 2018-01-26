@@ -1,25 +1,9 @@
 package ru.javabegin.trainin.springlibrary.entities;
 
 public class Genre {
-    private String name;
-    private long parent;
     private int idGenre;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public long getParent() {
-        return parent;
-    }
-
-    public void setParent(long parent) {
-        this.parent = parent;
-    }
+    private String name;
+    private int parent;
 
     public int getIdGenre() {
         return idGenre;
@@ -29,6 +13,22 @@ public class Genre {
         this.idGenre = idGenre;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getParent() {
+        return parent;
+    }
+
+    public void setParent(int parent) {
+        this.parent = parent;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -36,8 +36,8 @@ public class Genre {
 
         Genre genre = (Genre) o;
 
-        if (parent != genre.parent) return false;
         if (idGenre != genre.idGenre) return false;
+        if (parent != genre.parent) return false;
         if (name != null ? !name.equals(genre.name) : genre.name != null) return false;
 
         return true;
@@ -45,9 +45,9 @@ public class Genre {
 
     @Override
     public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + (int) (parent ^ (parent >>> 32));
-        result = 31 * result + idGenre;
+        int result = idGenre;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + parent;
         return result;
     }
 }
